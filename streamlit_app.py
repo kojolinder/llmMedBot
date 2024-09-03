@@ -28,11 +28,11 @@ if 'past' not in st.session_state:
 
 model = st.radio(
     "What task would you like to perform?",
-    ('Biomedical KG question answering', 'Biomedical question answering', 'General question answering'))
+    (''Biomedical question answering', 'General question answering'))
 
-if model == 'Biomedical KG question answering':
-    st.text("This is a medical KG of drug, manufacturers and outcomes")
-    from gpt import *
+#if model == 'Biomedical KG question answering':
+#    st.text("This is a medical KG of drug, manufacturers and outcomes")
+#    from gpt import *
 if model == 'Biomedical question answering':    
     from biogpt import *
 if model =='General question answering':
